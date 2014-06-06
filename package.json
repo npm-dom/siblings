@@ -1,0 +1,23 @@
+{
+  "name": "siblings",
+  "version": "0.0.1",
+  "description": "get siblings for a dom element, optionally filtered by a css selector",
+  "main": "index.js",
+  "author": "max ogden",
+  "license": "BSD",
+  "dependencies": {
+    "matches-selector": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm-dom/siblings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/npm-dom/siblings/issues"
+  },
+  "homepage": "https://github.com/npm-dom/siblings"
+}
