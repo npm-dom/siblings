@@ -1,7 +1,7 @@
 var matches = require('matches-selector')
 
 module.exports = function(el, selector) {
-  var node = el.parentNode
+  var node = el.parentNode.firstChild
   var siblings = []
   
   for ( ; node; node = node.nextSibling ) {
