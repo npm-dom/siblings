@@ -1,12 +1,15 @@
 var matches = require('matches-selector')
 
-module.exports = function(el, sel) {
+module.exports = function(el, selector) {
+  var node = el.parentNode
   var siblings = []
-  var siblings = el.parentNode.childNodes
-  if (!sel) return siblings
-  for (var i = 0; i < siblings.length; i++) {
-    var sibling = siblings[i]
-    if (matches(sibling, selector)) siblings.push(sibling)
+  
+  for ( ; node; node = node.nextSibling ) {
+    if ( node.nodeType === 1 && node !== el ) {
+      if (!selector) siblings.push(node)
+      else if (matches(node, selector)) siblings.push(node)
+    }
   }
+  
   return siblings
 }

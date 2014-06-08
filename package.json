@@ -1,6 +1,6 @@
 {
   "name": "siblings",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "get siblings for a dom element, optionally filtered by a css selector",
   "main": "index.js",
   "author": "max ogden",
